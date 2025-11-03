@@ -1,8 +1,6 @@
 Network Solve Labs
 Mastering Connectivity, Security, and Resilience in Modern Networks
 
-===============================================================================
-
 Why Networks Matter
 -------------------
 In today’s hyper-connected world, networks are the backbone of digital civilization.
@@ -25,8 +23,7 @@ Network Solve Labs is an open educational platform providing:
 - Cloud & SDN simulations (AWS VPC, Kubernetes networking, Cisco ACI)
 - Compliance frameworks (NIST, ISO 27001, GDPR network controls)
 
-All labs are infrastructure-as-code (IaC) ready — deployable via Docker, GNS3,
-or cloud sandboxes.
+All labs are infrastructure-as-code (IaC) ready — deployable pkt.
 
 Key Features
 ------------
@@ -40,14 +37,7 @@ Getting Started
 ---------------
 Prerequisites:
 - Basic understanding of OSI model
-- Docker or GNS3 installed (for local labs)
-- Python 3.8+ (for automation scripts)
-
-Quick Start:
-  git clone https://github.com/your-username/network-solve-labs.git
-  cd network-solve-labs
-  docker-compose up -d lab1
-  ./start-lab.sh 1
+- using Cisco Packet Tracer
 
 The Bigger Picture: Why We Solve Networks
 -----------------------------------------
@@ -70,10 +60,6 @@ License
 -------
 Distributed under the MIT License. See LICENSE for details.
 
-Contact
--------
-Project Lead: network-solve-labs@proton.me
-Community: github.com/your-username/network-solve-labs/discussions
 
 "The network is the computer." — Sun Microsystems (1984)
 Today, the network is everything.
