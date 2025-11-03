@@ -1,3 +1,5 @@
+SVI = Switch Virtual Interface
+
 config network as follow:
 1. 3650 = layer 3 switch with ip address and intervlan routing 
 VLAN 1 = 10.1.1.254/24
