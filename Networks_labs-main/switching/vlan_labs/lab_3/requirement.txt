@@ -1,0 +1,18 @@
+Router on Stack:
+
+1.config vlans in multi_layer sw :
+  vlan 1  => 10.1.1.254/24
+  vlan 10 => 10.1.10.254/24
+  vlan 20 => 10.1.20.254/24
+  
+2.create dhcp pools in router:
+  vlan 1 => 10.1.1.0/24
+  vlan 10 => 10.1.10.0/24
+  vlan 20 => 10.1.20.0/24
+ 
+3.config the sub interfaces in router for each vlans 
+4.dont use ip route in multi_layer sw (work just on layer 2)
+5.config switchport access and trunk iw Sw
+6.make sure the Pcs can ping each ather and prove it
+
+

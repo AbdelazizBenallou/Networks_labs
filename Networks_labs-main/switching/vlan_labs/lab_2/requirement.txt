@@ -1,0 +1,23 @@
+SVI = Switch Virtual Interface
+
+config network as follow:
+1. 3650 = layer 3 switch with ip address and intervlan routing 
+VLAN 1 = 10.1.1.254/24
+VLAN 10 = 10.1.10.254/24
+VLAN 20 = 10.1.20.254/24
+VLAN 30 = 10.1.30.254/24
+
+2.Active DHCP in Server after give it Statis IP :
+1 - DHCP for Vlan 1 = 10.1.1.0/24 excluded = 10.1.1.1 - 10.1.1.100 and gateway = 10.1.1.254/24
+2 - DHCP for Vlan 10 = 10.1.10.0/24 excluded = 10.1.10.1 - 10.1.10.100 and gateway = 10.1.10.254/24
+3 - DHCP for Vlan 20 = 10.1.20.0/24 excluded = 10.1.20.1 - 10.1.20.100 and gateway = 10.1.20.254/24
+1 - DHCP for Vlan 1 = 10.1.30.0/24 excluded = 10.1.30.1 - 10.1.30.100 and gateway = 10.1.30.254/24
+
+3.Active The dhcp option in each end User and make sure that this Pc take an ip from the correct range
+
+4.Config ports between Sws as trunk
+5.make sure That You can ping PCs with each ather
+6.make sure you can ping Sws from PCs
+
+7.config ssh in multi_layer switch for remote access !
+
