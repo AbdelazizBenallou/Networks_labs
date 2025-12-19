@@ -1,65 +1,130 @@
-Network Solve Labs
-Mastering Connectivity, Security, and Resilience in Modern Networks
+## 📡 Network Labs – Practical Networking with Cisco Packet Tracer
 
-Why Networks Matter
--------------------
-In today’s hyper-connected world, networks are the backbone of digital civilization.
-From cloud infrastructure and IoT ecosystems to global finance and critical
-healthcare systems, reliable, secure, and efficient networks enable innovation,
-collaboration, and progress.
+### Overview
 
-> A single misconfiguration can cascade into global outages.
-> A single vulnerability can compromise millions.
+This repository is a **hands-on networking labs collection** designed to help students and junior network engineers **learn, practice, and master real-world networking concepts** using **Cisco Packet Tracer**.
 
-Network Solve Labs exists to educate, simulate, and solve real-world networking
-challenges — so you can build systems that are resilient by design.
+The labs focus on **core enterprise networking technologies** such as VLANs, Inter-VLAN Routing, DHCP, NAT, SSH, VTP, and Wireless LAN configurations.
+Each lab is built to reflect **real production scenarios**, not just theory.
 
-What Is Network Solve Labs?
----------------------------
-Network Solve Labs is an open educational platform providing:
-- Hands-on labs for networking fundamentals (TCP/IP, DNS, BGP, VLANs)
-- Security deep dives (firewalls, IDS/IPS, zero-trust architectures)
-- Troubleshooting scenarios (latency, packet loss, routing loops)
-- Cloud & SDN simulations (AWS VPC, Kubernetes networking, Cisco ACI)
-- Compliance frameworks (NIST, ISO 27001, GDPR network controls)
+This project is especially suitable for:
 
-All labs are infrastructure-as-code (IaC) ready — deployable pkt.
+* **CCNA (200-301) candidates**
+* Networking students
+* Entry-level network engineers
+* Self-learners who prefer practice over theory
 
-Key Features
-------------
-• Zero-Setup Labs: Run labs in-browser or locally with 1 command
-• Real-World Scenarios: Simulate outages like the 2021 Facebook BGP leak
-• Automated Grading: Validate your solutions instantly
-• Community Challenges: Compete in weekly network puzzles
-• Vendor-Neutral: Works with Cisco, Juniper, Arista, Palo Alto & open-source tools
+---
 
-Getting Started
----------------
-Prerequisites:
-- Basic understanding of OSI model
-- using Cisco Packet Tracer
+### 🎯 Objectives
 
-The Bigger Picture: Why We Solve Networks
------------------------------------------
-- 60% of cloud outages stem from network misconfigurations (Gartner, 2024)
-- 95% of breaches involve network-layer exploitation (Verizon DBIR 2025)
-- The future is distributed — 5G, edge computing, and quantum networks demand new skills
+The main goals of this repository are to:
 
-Network Solve Labs bridges theory and practice so you can:
-✓ Design fault-tolerant architectures
-✓ Harden networks against APTs
-✓ Automate network validation
-✓ Speak the language of packets, protocols, and policies
+* Bridge the gap between **theoretical networking concepts** and **practical implementation**
+* Provide **step-by-step lab scenarios** that simulate real enterprise networks
+* Improve troubleshooting, configuration, and verification skills
+* Build confidence working with switches, routers, and wireless networks
 
-Contributing
-------------
-We welcome new lab scenarios, bug fixes, and translations.
-See CONTRIBUTING.md for guidelines.
+---
 
-License
--------
-Distributed under the MIT License. See LICENSE for details.
+### 🧪 Lab Topics Covered
 
+This repository includes structured labs covering:
 
-"The network is the computer." — Sun Microsystems (1984)
-Today, the network is everything.
+#### 🔀 Switching
+
+* VLAN creation and management
+* Access and trunk port configuration
+* Inter-VLAN routing using Layer 3 switches
+* VTP (VLAN Trunking Protocol)
+
+#### 🌐 IP Services
+
+* DHCP (Server-based & Router-based)
+* NAT configurations:
+
+  * Static NAT
+  * Dynamic NAT
+  * PAT (Port Address Translation)
+* Secure remote access using **SSH**
+
+#### 📶 Wireless Networking
+
+* WLAN basic configuration
+* Multi-VLAN wireless environments
+* DHCP with wireless clients
+* 802.1X authentication
+* WLC (Wireless LAN Controller) labs
+
+#### 📘 Learning Resources
+
+* Recommended CCNA books list
+* Lab requirements clearly documented for each scenario
+
+---
+
+### 🗂 Repository Structure
+
+Each lab follows a clean and consistent structure:
+
+* **`.pkt` files** → Ready-to-use Packet Tracer labs
+* **`requirements.txt`** → Lab objectives and configuration tasks
+* **Images (PNG/JPG)** → Network topology references (where applicable)
+
+This makes the labs easy to understand, follow, and reproduce.
+
+---
+
+### 🛠 Prerequisites
+
+Before starting, you should have:
+
+* Basic understanding of:
+
+  * OSI & TCP/IP models
+  * IP addressing and subnetting
+* Cisco Packet Tracer installed (recommended version 8.x or later)
+
+---
+
+### ✅ What You Will Learn
+
+By completing these labs, you will be able to:
+
+* Design and configure multi-VLAN networks
+* Implement DHCP services correctly per VLAN
+* Secure devices using SSH
+* Configure NAT for internet access
+* Troubleshoot connectivity issues
+* Understand enterprise-style network segmentation
+
+---
+
+### 🤝 Contribution
+
+Contributions are welcome!
+You can help by:
+
+* Adding new labs
+* Improving documentation
+* Fixing errors
+* Translating lab instructions
+
+Feel free to fork the repository and submit a pull request.
+
+---
+
+### 📄 License
+
+This project is licensed under the **MIT License**, allowing free use, modification, and distribution for learning and teaching purposes. 
+
+---
+
+### 🚀 Final Note
+
+> **Networking is not learned by reading alone — it is learned by configuring, breaking, and fixing.**
+
+This repository is built to help you do exactly that.
+
+---
+
