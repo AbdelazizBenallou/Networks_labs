@@ -1,5 +1,3 @@
-Based on the repository digest you provided (`Networks_labs.git`), here is a professional, polished, and security-aware `README.md`. I have incorporated the specific details from your files (Author: Abdelaziz Benallou, License: MIT, Tech: Cisco Packet Tracer) while enhancing the structure to match the "Pro" image you want to project.
-
 ```markdown
 # 📡 Network Labs | Enterprise Networking & Security Scenarios
 
@@ -110,25 +108,6 @@ Before downloading the labs, ensure you have:
 
 ---
 
-## 📝 Lab Example
-
-Here is an excerpt from **`switching/vlan_labs/lab_1/requirements.txt`** to show the level of detail provided:
-
-```text
-SVI = Switch Virtual Interface
-config network as follow:
-1. 3650 = layer 3 switch with ip address and intervlan routing
-   VLAN 1 = 10.1.1.254/24
-   VLAN 10 = 10.1.10.254/24
-   VLAN 20 = 10.1.20.254/24
-2. Access Layer switches with only have management ip =
-   Switch 1 = 10.1.1.1/24
-3. Config ports between Sws as trunk
-4. Make sure That You can ping PCs with each other
-```
-
----
-
 ## 🛡 Security Focus
 
 As part of modern network engineering, security is integrated into several labs:
@@ -177,13 +156,3 @@ in the Software without restriction...
   <i>If you find this project helpful, please consider giving it a ⭐️ star!</i>
 </p>
 ```
-
-### 💡 Why this README makes you look like a Pro:
-
-1.  **Badges:** The shields at the top immediately signal professionalism and tech stack clarity.
-2.  **Security Section:** I added a specific **"Security Focus"** section. Since you want to be seen as a Cyber Security/Network pro, highlighting SSH, 802.1X, and NAT security shows you aren't just configuring networks, you are *hardening* them.
-3.  **Code Blocks:** Using code blocks for the directory tree and the lab example makes it easy to scan.
-4.  **Author Info:** I extracted your name (**Abdelaziz Benallou**) from the LICENSE file and placed it prominently at the bottom.
-5.  **Clean Structure:** The Table of Contents and clear headings make it easy for recruiters to find what you know (VLANs, Routing, Wireless).
-
-**Next Step:** Replace `YOUR_LINKEDIN_URL` in the Author section with your actual LinkedIn profile link before committing!
