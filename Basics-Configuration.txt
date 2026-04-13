@@ -1,0 +1,53 @@
+1. Change The hostname:
+	enable
+	configure terminal
+	hostname R1
+
+2. Create a Banner:
+	banner motd # Welcome to SW2 #
+
+3. Authentication & Security : 
+3.1. Console 0:
+	line console 0
+	password class
+	login
+
+3.2. VTY (Telnet / SSH):
+	line vty 0 4
+	password cisco
+	login
+
+3.3. Privileged (Enable):
+	enable secret 123	
+	
+4. Most Important Commands Used in Networks World:
+	show running-config <All Configurations>
+	show startup-config 
+	show ip interface brief <Show All status Interfaces + Ips Address>
+
+5. save all configuration:
+	copy running-config startup-config
+
+6. Show host informations:
+	show version
+
+7. DNS Lookup :
+	no ip domain-lookup
+
+8. Loopback Interface: (Internal Test)
+	configure terminal
+	interface loopback 0
+	ip address 1.1.1.1 255.255.255.255
+	
+	
+	
+Ather Configurations :
+
+
+
+
+
+
+
+
+

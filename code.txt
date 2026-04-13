@@ -1,0 +1,260 @@
+The following is a digest of the repository "2025_11_02_networks".
+This digest is designed to be easily parsed by Large Language Models.
+
+--- SUMMARY ---
+Repository: 2025_11_02_networks
+Files Analyzed: 35
+Total Text Size: 5.64 KB
+Estimated Tokens (text only): ~2,504
+
+--- DIRECTORY STRUCTURE ---
+2025_11_02_networks/
+├── Networks_labs-main/
+│   ├── Books/
+│   │   └── names.txt
+│   ├── IP Services/
+│   │   ├── NAT/
+│   │   │   ├── NAT(PAT)/
+│   │   │   │   └── lab_01/
+│   │   │   │       ├── pat_nat.pkt [binary]
+│   │   │   │       ├── pat_nat.png [binary]
+│   │   │   │       └── requirements.txt
+│   │   │   ├── NAT(static PAT)/
+│   │   │   │   └── lab_01/
+│   │   │   │       ├── pat_static_nat.pkt [binary]
+│   │   │   │       └── requirements.txt
+│   │   │   └── NAT(Static)/
+│   │   │       └── lab_01/
+│   │   │           ├── requirements.txt
+│   │   │           └── static_nat.pkt [binary]
+│   │   └── SSH/
+│   │       └── lab_1/
+│   │           └── Ssh_Config.pkt
+│   ├── switching/
+│   │   ├── vlan_labs/
+│   │   │   ├── lab_1/
+│   │   │   │   ├── Multi_Vlans.pkt [binary]
+│   │   │   │   └── requirement.txt
+│   │   │   ├── lab_2/
+│   │   │   │   ├── DHCP_Ser_Vlans.pkt [binary]
+│   │   │   │   └── requirement.txt
+│   │   │   └── lab_3/
+│   │   │       ├── DHCP_Router_Vlans.pkt [binary]
+│   │   │       └── requirement.txt
+│   │   └── vtp_labs/
+│   │       └── lab_01/
+│   │           ├── requerements.txt
+│   │           └── vtp_lab.pkt [binary]
+│   └── wireless/
+│       ├── small_project_conf/
+│       │   ├── 802.1x.pkt [binary]
+│       │   ├── esa_bsa.pkt [binary]
+│       │   ├── multi_vlan.pkt [binary]
+│       │   ├── multi_vlans_with_dhcp.pkt [binary]
+│       │   ├── multi_vlans.pkt [binary]
+│       │   ├── wlan_lab_con.pkt [binary]
+│       │   ├── wlc_2.pkt [binary]
+│       │   └── wlc.pkt [binary]
+│       ├── Tps_wireless_exp/
+│       │   ├── lab_2/
+│       │   │   └── Tp2.pkt [binary]
+│       │   ├── lab_3/
+│       │   │   └── Tp_03.pkt [binary]
+│       │   ├── lab_4/
+│       │   │   ├── 4545.png [binary]
+│       │   │   ├── TP_04.pkt [binary]
+│       │   │   └── tp4.jpg [binary]
+│       │   └── lab_5/
+│       │       ├── TP_05_p2.pkt [binary]
+│       │       └── Tp_05.pkt [binary]
+│       └── wlc lab/
+│           └── wlac_lab.pkt [binary]
+├── LICENSE
+└── README.md
+
+
+--- FILE CONTENTS ---
+============================================================
+FILE: Networks_labs-main/Books/names.txt
+============================================================
+'1. CCNA 200-301 Official Cert Guide, Volume 1 .pdf'
+'2. CCNA 200-301 Official Cert Guide, Volume 2 .pdf'
+
+
+============================================================
+FILE: Networks_labs-main/switching/vlan_labs/lab_1/requirement.txt
+============================================================
+SVI = Switch Virtual Interface
+
+config network as follow:
+1. 3650 = layer 3 switch with ip address and intervlan routing 
+VLAN 1 = 10.1.1.254/24
+VLAN 10 = 10.1.10.254/24
+VLAN 20 = 10.1.20.254/24
+VLAN 30 = 10.1.30.254/24
+VLAN 100 = 10.1.100.254/24
+
+2.Access Layer switches with only have management ip =
+Switch 1 = 10.1.1.1/24
+Switch 2 = 10.1.1.2/24
+Switch 3 = 10.1.1.3/24
+
+3.config access ports as follow:
+PC1 in VLAN 10 - 10.1.10.10/24
+PC2 in VLAN 20 - 10.1.20.10/24
+PC3 in VLAN 30 - 10.1.30.10/24
+
+Server 1 in VlAN 100 - 10.1.100.10/24
+
+4.Config ports between Sws as trunk
+5.make sure That You can ping PCs with each ather
+6.make sure you can ping Sws from PCs
+
+
+
+
+============================================================
+FILE: Networks_labs-main/switching/vlan_labs/lab_2/requirement.txt
+============================================================
+SVI = Switch Virtual Interface
+
+config network as follow:
+1. 3650 = layer 3 switch with ip address and intervlan routing 
+VLAN 1 = 10.1.1.254/24
+VLAN 10 = 10.1.10.254/24
+VLAN 20 = 10.1.20.254/24
+VLAN 30 = 10.1.30.254/24
+
+2.Active DHCP in Server after give it Statis IP :
+1 - DHCP for Vlan 1 = 10.1.1.0/24 excluded = 10.1.1.1 - 10.1.1.100 and gateway = 10.1.1.254/24
+2 - DHCP for Vlan 10 = 10.1.10.0/24 excluded = 10.1.10.1 - 10.1.10.100 and gateway = 10.1.10.254/24
+3 - DHCP for Vlan 20 = 10.1.20.0/24 excluded = 10.1.20.1 - 10.1.20.100 and gateway = 10.1.20.254/24
+1 - DHCP for Vlan 1 = 10.1.30.0/24 excluded = 10.1.30.1 - 10.1.30.100 and gateway = 10.1.30.254/24
+
+3.Active The dhcp option in each end User and make sure that this Pc take an ip from the correct range
+
+4.Config ports between Sws as trunk
+5.make sure That You can ping PCs with each ather
+6.make sure you can ping Sws from PCs
+
+7.config ssh in multi_layer switch for remote access !
+
+
+
+============================================================
+FILE: Networks_labs-main/switching/vlan_labs/lab_3/requirement.txt
+============================================================
+Router on Stack:
+
+1.config vlans in multi_layer sw :
+  vlan 1  => 10.1.1.254/24
+  vlan 10 => 10.1.10.254/24
+  vlan 20 => 10.1.20.254/24
+  
+2.create dhcp pools in router:
+  vlan 1 => 10.1.1.0/24
+  vlan 10 => 10.1.10.0/24
+  vlan 20 => 10.1.20.0/24
+ 
+3.config the sub interfaces in router for each vlans 
+4.dont use ip route in multi_layer sw (work just on layer 2)
+5.config switchport access and trunk iw Sw
+6.make sure the Pcs can ping each ather and prove it
+
+
+
+
+============================================================
+FILE: LICENSE
+============================================================
+MIT License
+
+Copyright (c) 2025 Abdelaziz Benallou
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+============================================================
+FILE: README.md
+============================================================
+Network Solve Labs
+Mastering Connectivity, Security, and Resilience in Modern Networks
+
+Why Networks Matter
+-------------------
+In today’s hyper-connected world, networks are the backbone of digital civilization.
+From cloud infrastructure and IoT ecosystems to global finance and critical
+healthcare systems, reliable, secure, and efficient networks enable innovation,
+collaboration, and progress.
+
+> A single misconfiguration can cascade into global outages.
+> A single vulnerability can compromise millions.
+
+Network Solve Labs exists to educate, simulate, and solve real-world networking
+challenges — so you can build systems that are resilient by design.
+
+What Is Network Solve Labs?
+---------------------------
+Network Solve Labs is an open educational platform providing:
+- Hands-on labs for networking fundamentals (TCP/IP, DNS, BGP, VLANs)
+- Security deep dives (firewalls, IDS/IPS, zero-trust architectures)
+- Troubleshooting scenarios (latency, packet loss, routing loops)
+- Cloud & SDN simulations (AWS VPC, Kubernetes networking, Cisco ACI)
+- Compliance frameworks (NIST, ISO 27001, GDPR network controls)
+
+All labs are infrastructure-as-code (IaC) ready — deployable pkt.
+
+Key Features
+------------
+• Zero-Setup Labs: Run labs in-browser or locally with 1 command
+• Real-World Scenarios: Simulate outages like the 2021 Facebook BGP leak
+• Automated Grading: Validate your solutions instantly
+• Community Challenges: Compete in weekly network puzzles
+• Vendor-Neutral: Works with Cisco, Juniper, Arista, Palo Alto & open-source tools
+
+Getting Started
+---------------
+Prerequisites:
+- Basic understanding of OSI model
+- using Cisco Packet Tracer
+
+The Bigger Picture: Why We Solve Networks
+-----------------------------------------
+- 60% of cloud outages stem from network misconfigurations (Gartner, 2024)
+- 95% of breaches involve network-layer exploitation (Verizon DBIR 2025)
+- The future is distributed — 5G, edge computing, and quantum networks demand new skills
+
+Network Solve Labs bridges theory and practice so you can:
+✓ Design fault-tolerant architectures
+✓ Harden networks against APTs
+✓ Automate network validation
+✓ Speak the language of packets, protocols, and policies
+
+Contributing
+------------
+We welcome new lab scenarios, bug fixes, and translations.
+See CONTRIBUTING.md for guidelines.
+
+License
+-------
+Distributed under the MIT License. See LICENSE for details.
+
+
+"The network is the computer." — Sun Microsystems (1984)
+Today, the network is everything.
